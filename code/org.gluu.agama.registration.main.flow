@@ -99,7 +99,7 @@ maxJourney = Repeat 6 times max
                                                        // Log code resend
                                                        Log "@info New OTP code send successfully!" otpCode
                                                        // Provide feedback about the error message to user.
-                                                       uiFeedback.errorMessage = "A new OTP code has been send to you on your mobile phone."
+                                                       uiFeedback.errorMessage = "A new OTP code has been send to you on your mail Id."
                                                   Otherwise
                                                        //  Add log entry with collected code in log file.
                                                        Log "@info Password provided by the user " 
@@ -158,5 +158,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_ndisz = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_ndisz
+it_mvalu = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_mvalu
